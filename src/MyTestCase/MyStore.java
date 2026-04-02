@@ -19,7 +19,8 @@ import com.google.common.annotations.VisibleForTesting;
 
 public class MyStore {
 
-	WebDriver driver = new ChromeDriver();
+//	WebDriver driver = new ChromeDriver();
+	WebDriver driver = new EdgeDriver();
 	Random rand = new Random();
 
 	@BeforeTest
@@ -61,8 +62,8 @@ public class MyStore {
 
 	}
 
-	@Test(priority = 3, enabled = true)
-	public void LoginPage() throws InterruptedException {
+	@Test(priority = 3, enabled = false)
+	public void LoginOnSellerPage() throws InterruptedException {
 		WebElement DropDown = driver.findElement(By.className("dropdown"));
 		DropDown.click();
 		Thread.sleep(2000);
@@ -113,7 +114,7 @@ public class MyStore {
 		Assert.assertEquals(driver.findElement(By.className("message")).getText(), "Product created successfully");
 	}
 
-	@Test(priority = 5, enabled = true)
+	@Test(priority = 5, enabled = false)
 	public void DeleteProductRandom() throws InterruptedException {
 		WebElement MyProduct = driver.findElement(By.id("nav-products"));
 		MyProduct.click();
@@ -138,5 +139,49 @@ public class MyStore {
 		Thread.sleep(1500);
 		// Assertion
 		Assert.assertEquals(driver.findElement(By.className("message")).getText(), "Product deleted successfully");
+	}
+
+	// Normal User And Add Items
+	@Test(priority = 6, enabled = true)
+	public void LoginOnCustomerPage() throws InterruptedException {
+		WebElement DropDown = driver.findElement(By.className("dropdown"));
+		DropDown.click();
+		Thread.sleep(2000);
+		List<WebElement> Login = driver.findElements(By.className("dropdown-item"));
+		Login.get(0).click();
+		// Login With Sellar account
+		// webelement
+		WebElement EmailInput = driver.findElement(By.id("login-email"));
+		WebElement PasswordInput = driver.findElement(By.id("login-password"));
+		WebElement LoginButton = driver.findElement(By.id("login-submit-btn"));
+
+		// Action
+		EmailInput.sendKeys("test1@gmail.com");
+		PasswordInput.sendKeys("Password123@");
+		LoginButton.click();
+		Thread.sleep(1000);
+		WebElement Shop = driver.findElement(By.linkText("SHOP"));
+		Shop.click();
+	}
+
+	@Test(priority = 7, enabled = true)
+	public void AddItems() throws InterruptedException {
+		WebElement WomenCollection = driver.findElement(By.id("cat-pill-women"));
+		WomenCollection.click();
+		Thread.sleep(2000);
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		Thread.sleep(1000);
+		
+		List<WebElement>AddButton=driver.findElements(By.cssSelector(".add-cart-btn.test-add-btn"));
+		int randomeItem= rand.nextInt(AddButton.size());
+		
+		WebElement selectedButton = AddButton.get(randomeItem);
+		System.out.println("Adding: " + selectedButton.getAttribute("aria-label"));
+		js.executeScript("arguments[0].scrollIntoView(true);",  selectedButton);
+		Thread.sleep(500);
+		js.executeScript("window.scrollBy(0, -100);");
+		Thread.sleep(500);
+		js.executeScript("arguments[0].click();", selectedButton);
+
 	}
 }
