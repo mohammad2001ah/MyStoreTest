@@ -11,11 +11,15 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.google.common.annotations.VisibleForTesting;
+
+import net.bytebuddy.build.Plugin.Factory.UsingReflection.Priority;
 
 public class MyStore {
 
@@ -164,7 +168,7 @@ public class MyStore {
 		Shop.click();
 	}
 
-	@Test(priority = 7, enabled = true)
+	@Test(priority = 7, enabled = false)
 	public void AddItems() throws InterruptedException {
 		WebElement WomenCollection = driver.findElement(By.id("cat-pill-women"));
 		WomenCollection.click();
@@ -184,4 +188,25 @@ public class MyStore {
 		js.executeScript("arguments[0].click();", selectedButton);
 
 	}
-}
+	@Test(priority = 8,enabled = true)
+	public void  viewCart() throws InterruptedException {
+		WebElement Cart=driver.findElement(By.xpath("//a[@aria-label='Shopping cart']"));
+		Cart.click();
+		Thread.sleep(1000);
+		Assert.assertEquals(driver.findElement(By.tagName("h1")).getText(), "Shopping Cart");
+	}
+	@Test(priority = 9,enabled = true)
+	public void Logout() throws InterruptedException {
+		WebElement DropDown = driver.findElement(By.className("dropdown"));
+		DropDown.click();
+	
+		Thread.sleep(1000);
+		WebElement logout= driver.findElement(By.xpath("//button[text()='Logout']"));
+		logout.click();
+		Assert.assertEquals(driver.findElement(By.id("login-header")).getText(),"Login to Your Account" );
+	}
+	@AfterTest
+	public void CloseTest() {
+		driver.quit();
+	}
+	}

@@ -1,24 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="5" total="7" passed="2" failed="0" skipped="0">
+<testng-results ignored="6" total="9" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-02T16:18:03 EET" name="Default suite" finished-at="2026-04-02T16:18:15 EET" duration-ms="12015">
+  <suite started-at="2026-04-03T17:35:31 EET" name="Default suite" finished-at="2026-04-03T17:35:41 EET" duration-ms="10107">
     <groups>
     </groups>
-    <test started-at="2026-04-02T16:18:03 EET" name="Default test" finished-at="2026-04-02T16:18:15 EET" duration-ms="12015">
+    <test started-at="2026-04-03T17:35:31 EET" name="Default test" finished-at="2026-04-03T17:35:41 EET" duration-ms="10107">
       <class name="MyTestCase.MyStore">
-        <test-method is-config="true" signature="MySetUP()[pri:0, instance:MyTestCase.MyStore@12bd8a64]" started-at="2026-04-02T16:18:04 EET" name="MySetUP" finished-at="2026-04-02T16:18:06 EET" duration-ms="2566" status="PASS">
+        <test-method is-config="true" signature="MySetUP()[pri:0, instance:MyTestCase.MyStore@70ab2d48]" started-at="2026-04-03T17:35:31 EET" name="MySetUP" finished-at="2026-04-03T17:35:33 EET" duration-ms="2404" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MySetUP -->
-        <test-method signature="LoginOnCustomerPage()[pri:6, instance:MyTestCase.MyStore@12bd8a64]" started-at="2026-04-02T16:18:06 EET" name="LoginOnCustomerPage" finished-at="2026-04-02T16:18:11 EET" duration-ms="4948" status="PASS">
+        <test-method signature="LoginOnCustomerPage()[pri:6, instance:MyTestCase.MyStore@70ab2d48]" started-at="2026-04-03T17:35:33 EET" name="LoginOnCustomerPage" finished-at="2026-04-03T17:35:38 EET" duration-ms="4646" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginOnCustomerPage -->
-        <test-method signature="AddItems()[pri:7, instance:MyTestCase.MyStore@12bd8a64]" started-at="2026-04-02T16:18:11 EET" name="AddItems" finished-at="2026-04-02T16:18:15 EET" duration-ms="4376" status="PASS">
+        <test-method signature="viewCart()[pri:8, instance:MyTestCase.MyStore@70ab2d48]" started-at="2026-04-03T17:35:38 EET" name="viewCart" finished-at="2026-04-03T17:35:39 EET" duration-ms="1401" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AddItems -->
+        </test-method> <!-- viewCart -->
+        <test-method signature="Logout()[pri:9, instance:MyTestCase.MyStore@70ab2d48]" started-at="2026-04-03T17:35:39 EET" name="Logout" finished-at="2026-04-03T17:35:40 EET" duration-ms="1290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+        <test-method is-config="true" signature="CloseTest()[pri:0, instance:MyTestCase.MyStore@70ab2d48]" started-at="2026-04-03T17:35:40 EET" name="CloseTest" finished-at="2026-04-03T17:35:41 EET" duration-ms="309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseTest -->
       </class> <!-- MyTestCase.MyStore -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
