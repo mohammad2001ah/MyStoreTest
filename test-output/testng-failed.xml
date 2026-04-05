@@ -5,7 +5,8 @@
     <classes>
       <class name="MyTestCase.MyStore">
         <methods>
-          <include name="Logout"/>
+          <include name="CloseTest"/>
+          <include name="CreateSeller"/>
           <include name="MySetUP"/>
         </methods>
       </class> <!-- MyTestCase.MyStore -->
