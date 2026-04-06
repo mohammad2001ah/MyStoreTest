@@ -1,101 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="12" passed="10" failed="1" skipped="0">
+<testng-results ignored="1" total="12" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-05T19:17:04 EET" name="Default suite" finished-at="2026-04-05T19:18:09 EET" duration-ms="64996">
+  <suite started-at="2026-04-06T19:52:44 EET" name="Default suite" finished-at="2026-04-06T19:53:33 EET" duration-ms="48987">
     <groups>
     </groups>
-    <test started-at="2026-04-05T19:17:04 EET" name="Default test" finished-at="2026-04-05T19:18:09 EET" duration-ms="64996">
-      <class name="MyTestCase.MyStore">
-        <test-method is-config="true" signature="MySetUP()[pri:0, instance:MyTestCase.MyStore@13518f37]" started-at="2026-04-05T19:17:04 EET" name="MySetUP" finished-at="2026-04-05T19:17:05 EET" duration-ms="1362" status="PASS">
+    <test started-at="2026-04-06T19:52:44 EET" name="Default test" finished-at="2026-04-06T19:53:33 EET" duration-ms="48987">
+      <class name="MyTestCase.MyTest">
+        <test-method is-config="true" signature="MySetUP()[pri:0, instance:MyTestCase.MyTest@7cbc3762]" started-at="2026-04-06T19:52:44 EET" name="MySetUP" finished-at="2026-04-06T19:52:46 EET" duration-ms="1835" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MySetUP -->
-        <test-method signature="OpenSingUpPage()[pri:1, instance:MyTestCase.MyStore@13518f37]" started-at="2026-04-05T19:17:05 EET" name="OpenSingUpPage" finished-at="2026-04-05T19:17:05 EET" duration-ms="324" status="PASS">
+        <test-method signature="OpenSingUpPage()[pri:1, instance:MyTestCase.MyTest@7cbc3762]" started-at="2026-04-06T19:52:46 EET" name="OpenSingUpPage" finished-at="2026-04-06T19:52:48 EET" duration-ms="2410" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenSingUpPage -->
-        <test-method signature="CreateSeller()[pri:2, instance:MyTestCase.MyStore@13518f37]" started-at="2026-04-05T19:17:05 EET" name="CreateSeller" finished-at="2026-04-05T19:17:06 EET" duration-ms="1055" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.JavascriptExecutor.executeScript(String, Object[])" because "this.js" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.JavascriptExecutor.executeScript(String, Object[])" because "this.js" is null
-at MyTestCase.MyStore.CreateSeller(MyStore.java:60)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="CreateSeller()[pri:2, instance:MyTestCase.MyTest@7cbc3762]" started-at="2026-04-06T19:52:48 EET" name="CreateSeller" finished-at="2026-04-06T19:52:54 EET" duration-ms="5402" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateSeller -->
-        <test-method signature="LoginOnSellerPage()[pri:3, instance:MyTestCase.MyStore@13518f37]" started-at="2026-04-05T19:17:06 EET" name="LoginOnSellerPage" finished-at="2026-04-05T19:17:08 EET" duration-ms="1645" status="PASS">
+        <test-method signature="LoginOnSellerPage()[pri:3, instance:MyTestCase.MyTest@7cbc3762]" started-at="2026-04-06T19:52:54 EET" name="LoginOnSellerPage" finished-at="2026-04-06T19:52:58 EET" duration-ms="4449" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginOnSellerPage -->
-        <test-method signature="AddProduct()[pri:4, instance:MyTestCase.MyStore@13518f37]" started-at="2026-04-05T19:17:08 EET" name="AddProduct" finished-at="2026-04-05T19:17:51 EET" duration-ms="43232" status="PASS">
+        <test-method signature="AddProduct()[pri:4, instance:MyTestCase.MyTest@7cbc3762]" started-at="2026-04-06T19:52:58 EET" name="AddProduct" finished-at="2026-04-06T19:53:07 EET" duration-ms="9204" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddProduct -->
-        <test-method signature="LogoutFromSeller()[pri:6, instance:MyTestCase.MyStore@13518f37]" started-at="2026-04-05T19:17:51 EET" name="LogoutFromSeller" finished-at="2026-04-05T19:17:52 EET" duration-ms="693" status="PASS">
+        <test-method signature="LogoutFromSeller()[pri:6, instance:MyTestCase.MyTest@7cbc3762]" started-at="2026-04-06T19:53:07 EET" name="LogoutFromSeller" finished-at="2026-04-06T19:53:09 EET" duration-ms="1624" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogoutFromSeller -->
-        <test-method signature="OpenSingUpPageForUser()[pri:7, instance:MyTestCase.MyStore@13518f37]" started-at="2026-04-05T19:17:52 EET" name="OpenSingUpPageForUser" finished-at="2026-04-05T19:17:53 EET" duration-ms="707" status="PASS">
+        <test-method signature="OpenSingUpPageForUser()[pri:7, instance:MyTestCase.MyTest@7cbc3762]" started-at="2026-04-06T19:53:09 EET" name="OpenSingUpPageForUser" finished-at="2026-04-06T19:53:11 EET" duration-ms="2101" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenSingUpPageForUser -->
-        <test-method signature="CreateUser()[pri:8, instance:MyTestCase.MyStore@13518f37]" started-at="2026-04-05T19:17:53 EET" name="CreateUser" finished-at="2026-04-05T19:17:56 EET" duration-ms="3851" status="PASS">
+        <test-method signature="CreateUser()[pri:8, instance:MyTestCase.MyTest@7cbc3762]" started-at="2026-04-06T19:53:11 EET" name="CreateUser" finished-at="2026-04-06T19:53:17 EET" duration-ms="5700" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateUser -->
-        <test-method signature="LoginOnCustomerPage()[pri:9, instance:MyTestCase.MyStore@13518f37]" started-at="2026-04-05T19:17:56 EET" name="LoginOnCustomerPage" finished-at="2026-04-05T19:18:00 EET" duration-ms="3709" status="PASS">
+        <test-method signature="LoginOnCustomerPage()[pri:9, instance:MyTestCase.MyTest@7cbc3762]" started-at="2026-04-06T19:53:17 EET" name="LoginOnCustomerPage" finished-at="2026-04-06T19:53:23 EET" duration-ms="6124" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginOnCustomerPage -->
-        <test-method signature="AddItemsToCart()[pri:10, instance:MyTestCase.MyStore@13518f37]" started-at="2026-04-05T19:18:00 EET" name="AddItemsToCart" finished-at="2026-04-05T19:18:05 EET" duration-ms="5238" status="PASS">
+        <test-method signature="AddItemsToCart()[pri:10, instance:MyTestCase.MyTest@7cbc3762]" started-at="2026-04-06T19:53:23 EET" name="AddItemsToCart" finished-at="2026-04-06T19:53:28 EET" duration-ms="4794" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddItemsToCart -->
-        <test-method signature="viewCart()[pri:11, instance:MyTestCase.MyStore@13518f37]" started-at="2026-04-05T19:18:05 EET" name="viewCart" finished-at="2026-04-05T19:18:07 EET" duration-ms="1516" status="PASS">
+        <test-method signature="viewCart()[pri:11, instance:MyTestCase.MyTest@7cbc3762]" started-at="2026-04-06T19:53:28 EET" name="viewCart" finished-at="2026-04-06T19:53:30 EET" duration-ms="2390" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- viewCart -->
-        <test-method signature="Logout()[pri:12, instance:MyTestCase.MyStore@13518f37]" started-at="2026-04-05T19:18:07 EET" name="Logout" finished-at="2026-04-05T19:18:08 EET" duration-ms="1288" status="PASS">
+        <test-method signature="Logout()[pri:12, instance:MyTestCase.MyTest@7cbc3762]" started-at="2026-04-06T19:53:30 EET" name="Logout" finished-at="2026-04-06T19:53:32 EET" duration-ms="2328" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="CloseTest()[pri:0, instance:MyTestCase.MyStore@13518f37]" started-at="2026-04-05T19:18:08 EET" name="CloseTest" finished-at="2026-04-05T19:18:09 EET" duration-ms="263" status="PASS">
+        <test-method is-config="true" signature="CloseTest()[pri:0, instance:MyTestCase.MyTest@7cbc3762]" started-at="2026-04-06T19:53:32 EET" name="CloseTest" finished-at="2026-04-06T19:53:33 EET" duration-ms="430" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseTest -->
-      </class> <!-- MyTestCase.MyStore -->
+      </class> <!-- MyTestCase.MyTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
